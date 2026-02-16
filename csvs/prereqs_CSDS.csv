@@ -1,0 +1,27 @@
+Intro to Programming 1: Python,0
+Intro to Programming 2: Python,0,Intro to Programming 1: Python
+Intro to Programming 3: Python,0,Intro to Programming 2: Python
+Basics of Algorithms,0,Intro to Programming 3: Python,Mathematical Foundations of Computing
+Algorithms and Data Structures,1,Basics of Algorithms,Linear Algebra 2
+Game Development,1,Basics of Algorithms
+Intro to Higher Mathematics,0
+Calculus 1,0,Intro to Higher Mathematics
+Linear Algebra 1,0,Calculus 1
+Discrete Math,0,Linear Algebra 1
+Combinatorics and Graphs,0,Discrete Math
+Mathematical Foundations of Computing,0,Combinatorics and Graphs
+Intro to Probability and Statistics,0,Mathematical Foundations of Computing
+Calculus 2,0,Intro to Probability and Statistics
+Linear Algebra 2,0,Calculus 2
+Probability and Statistics,1,Linear Algebra 2
+Intro to Machine Learning,1,Probability and Statistics
+Practical Machine Learning,1,Intro to Machine Learning
+Intro to Frontend Development,1
+Intro to Web Development,1,Intro to Frontend Development,Basics of Databases
+Basics of Databases,1,Practical Linux and Scripting Languages
+Practical Linux and Scripting Languages,1
+Computer Organization and Systems,1,Practical Linux and Scripting Languages
+Programming: Java / Kotlin,1
+Fundamentals of Operating Systems,1,Computer Organization and Systems,Practical Linux and Scripting Languages,Programming: Java / Kotlin
+Intro to Computer Networks,1,Fundamentals of Operating Systems
+Mobile Development,1,Programming: Java / Kotlin

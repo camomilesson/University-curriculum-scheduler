@@ -1,0 +1,78 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Pytest/cache
+.pytest_cache/
+.coverage
+coverage.xml
+
+# Mypy cache
+.mypy_cache/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Optional: ignore local environment files
+.env
+.env.*
+
+# Project-specific generated outputs
+out_schedule.csv
+out_soft_violations.csv
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Wheel / build artifacts
+pip-wheel-metadata/
+*.whl
+
+# Local python build
+__pypackages__/
+
+# Ignore compiled Cython files
+*.c
+*.so
+
+# Keep csvs/ directory (input data) in repo; remove/comment the next line if csvs are generated:
+# csvs/
