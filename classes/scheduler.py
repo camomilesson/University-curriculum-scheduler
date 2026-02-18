@@ -135,10 +135,12 @@ class Scheduler:
         while unassigned:
 
             if layer > max_layers:
-                raise RuntimeError(
+                break
+                """ raise RuntimeError(
                     f"Too many layers ({layer}) while chain courses still unassigned "
-                    f"({len(unassigned)}). Likely impossible constraints."
-                )
+                    f"({len(unassigned)}). Likely impossible constraints. "
+                    f"Unassigned chain courses at layer {layer}: {[c.name for c in unassigned]} "
+                ) """
 
             progress_this_layer = 0
 

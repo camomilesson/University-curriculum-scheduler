@@ -14,8 +14,6 @@ Expected CSV formats (brief):
 
 from classes import Scheduler
 
-# Loader functions and CSV constants have been moved to `data_loaders.py` to
-# separate I/O and building logic from the orchestration in `main.py`.
 from data_loaders import (
     build_teachers,
     build_courses,
@@ -24,7 +22,9 @@ from data_loaders import (
     debug_state,
 )
 
-DEBUG = True
+from reports import write_zero_capacity_teachers_report
+
+DEBUG = False
 
 
 # ---------- MAIN ----------
@@ -68,11 +68,22 @@ def main():
     scheduler.print_modules()
     scheduler.print_summary()
 
-    scheduler.export_schedule_csv("out_schedule.csv")
-    scheduler.export_soft_violations_csv("out_soft_violations.csv")
+    scheduler.export_schedule_csv("csvs/out_schedule.csv")
+    scheduler.export_soft_violations_csv("csvs/out_soft_violations.csv")
 
-    print("\nWrote out_schedule.csv and out_soft_violations.csv") 
+    # Generate diagnostic report
+    write_zero_capacity_teachers_report(
+        teachers,
+        courses,
+        filepath="csvs/out_teachers_capacity_zero.csv"
+    )
 
+    print(
+        "\nWrote out_schedule.csv, "
+        "out_soft_violations.csv, "
+        "and out_teachers_capacity_zero.csv"
+        "to the csvs/ directory."
+    )
 
 if __name__ == "__main__":
     main()

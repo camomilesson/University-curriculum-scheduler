@@ -7,8 +7,8 @@ Game Development,1,Basics of Algorithms
 Intro to Higher Mathematics,0
 Calculus 1,0,Intro to Higher Mathematics
 Linear Algebra 1,0,Calculus 1
-Discrete Math,0,Linear Algebra 1
-Combinatorics and Graphs,0,Discrete Math
+Discrete Mathematics,0,Linear Algebra 1
+Combinatorics and Graphs,0,Discrete Mathematics
 Mathematical Foundations of Computing,0,Combinatorics and Graphs
 Intro to Probability and Statistics,0,Mathematical Foundations of Computing
 Calculus 2,0,Intro to Probability and Statistics

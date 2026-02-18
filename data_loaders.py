@@ -18,6 +18,7 @@ COURSE_TEACHER_FILE = "csvs/course_teacher.csv"
 CELEBRITY_FILE = "csvs/celebrity_courses.csv"
 
 
+
 def load_teacher_availability():
     """Parse the teacher availability CSV and return metadata per teacher.
 
@@ -53,6 +54,8 @@ def load_course_teacher_rows():
     rows = []
     with open(COURSE_TEACHER_FILE, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
+        next(reader, None)
+
         for row in reader:
             if not row:
                 continue
@@ -104,9 +107,11 @@ def build_courses_from_course_teacher(teachers):
         # attach teacher names (ensure teacher exists)
         for t in teacher_names:
             if t not in teachers:
-                raise KeyError(
-                    f"course_teacher.csv references teacher '{t}' for course '{course_name}', "
-                    f"but '{t}' is missing from teacher_availability.csv"
+                teachers[t] = Teacher(
+                    name=t,
+                    can_teach_courses=set(),
+                    availability=[-1]*14,
+                    capacity=0
                 )
             course.possible_teachers.add(t)
 
