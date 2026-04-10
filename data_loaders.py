@@ -12,9 +12,9 @@ from classes import Teacher, Course, Module
 
 
 # Paths to CSV input files used by the script.
-TEACHER_AVAIL_FILE = "csvs/teacher_availability.csv"
+TEACHER_AVAIL_FILE = "csvs/teacher_availability_2025.csv"
 PREREQS_FILE = "csvs/prereqs_CSDS.csv"
-COURSE_TEACHER_FILE = "csvs/course_teacher.csv"
+COURSE_TEACHER_FILE = "csvs/course_teacher_2025.csv"
 CELEBRITY_FILE = "csvs/celebrity_courses.csv"
 
 
